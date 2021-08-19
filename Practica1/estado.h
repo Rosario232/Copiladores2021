@@ -8,14 +8,10 @@ class ESTADO;
 #include "transiciones.h"
 #endif
 
-
-
 enum TipoEstado {INICIAL,INTERMEDIO,FINAL};
-
 class ESTADO
 	{
 public:
-
 	TipoEstado estado; 
     /*define el tipo de estado
         0= estado inicial
@@ -27,14 +23,10 @@ public:
 	CaracterSet *sigma;
 
 	ESTADO();
-	
 	void setTipoEstado(TipoEstado tipo);
-	
 	void setCaracterSet(CaracterSet &caracteres);
-	
 	void setTransiciones(Transiciones &tuple);
-	
-	TipoEstado getStateType();
+	TipoEstado getTipoEstados();
 	
 	};
 	
